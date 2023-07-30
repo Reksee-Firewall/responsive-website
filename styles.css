@@ -1,20 +1,100 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+/* CSS */
 
 html {
     font-family: 'Poppins';
     font-size: 16px; /* Setting the root font size to 16px */
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
 }  
 
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-size: 1rem;
+    font-family: inherit;
+    color: white;
+    padding: 0.20rem;
+    background-color: deeppink;
+    border: 2px solid deeppink;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: white;
+    border: 2px solid white;
+    color: deeppink;
+}
+
 header {
+    display: flex;
+    flex-direction: column;
     background-image: url("data/mountains.jpg");
     background-size: cover; 
-    background-repeat: no-repeat; 
     background-position: center;
+    width: 100%;
     height: 550px; 
+    color: white;
+}
 
+header .upper {
+    display: flex;
+    padding: 0.80rem;
+    justify-content: space-between;
+}
+
+header .upper h1 {
+    display: inline;
+}
+
+header .upper ul {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration-style: none;
+}
+
+header .upper li{
+    display: inline;
+    text-decoration: none;
+}
+
+header .upper li:hover {
+    color: deeppink;
+}
+
+header .lower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+header .lower > * {
+    display: flex;
+}
+
+header .lower h1 {
+    padding: 1rem;
+}
+
+header .lower h2 {
+    font-size: 1rem;
+}
+
+header .lower object {
+    height: 0.2rem;
+    width: 10rem;
+    border-radius: 10px;
+    background-color: deeppink;
 }
