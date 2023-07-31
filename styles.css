@@ -42,7 +42,7 @@ header {
     background-size: cover; 
     background-position: center;
     width: 100%;
-    height: 550px; 
+    height: 600px; 
     color: white;
 }
 
@@ -92,9 +92,132 @@ header .lower h2 {
     font-size: 1rem;
 }
 
-header .lower object {
+object {
     height: 0.2rem;
     width: 10rem;
     border-radius: 10px;
     background-color: deeppink;
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+    background-color: white;
+}
+
+.events h1 {
+    padding-top: 3rem;
+}
+
+.events .content {
+    display: inline-flex;
+    gap: 5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.events .content img { 
+    display: inline-flex;
+    width: 30.70vw;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.events .content img:hover{
+    transform: scale(1.06);
+}
+
+.events .content p {
+    padding: 0.25rem;
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    background-image: url("data/map.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 650px;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+
+.explore .content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8.25vw;
+    align-items: center;
+}
+
+.explore h1 {
+    font-size: 2rem;
+}
+
+.explore p {
+    padding: 1rem;
+}
+
+.tours {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tours .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 25vw;
+    padding-right: 1rem;
+}
+
+.tours h1 {
+    font-size: 3.025vw;
+}
+
+.tours p {
+    text-align: justify;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.tours img {
+    width: 20vw;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 110px;
+    color: white;
+    background-color: darkslategray;
+}
+
+@media only screen and (max-width: 650px) {
+    header .upper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .explore {
+        align-items: center;
+    }
+    
+    .explore .content {
+        padding: 0;
+    }
 }
